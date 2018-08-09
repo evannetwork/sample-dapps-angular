@@ -1,0 +1,66 @@
+<!--
+  Copyright (c) 2018-present evan GmbH.
+ 
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+      http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<!--
+  Copyright (c) 2018-present evan GmbH.
+ 
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+      http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  
+-->
+
+<evan-loading *ngIf="loading"></evan-loading>
+<section class="todoapp" *ngIf="!loading">
+	<ng-container *ngIf="invalid">
+		<header class="header">
+			<h1>{{ '_tutorialtask.invalid-contract-address' | translate }}</h1>
+		</header>
+	</ng-container>
+	<ng-container *ngIf="!invalid">
+		<header class="header">
+			<h1>{{ description.name }}</h1>
+			<input class="new-todo" placeholder="What needs to be done?" autofocus="" [(ngModel)]="newTodoText" (keyup.enter)="addTodo()">
+		</header>
+		<section class="main" *ngIf="todos.length > 0">
+			<ul class="todo-list">
+				<li *ngFor="let todo of todos"
+					[class.completed]="todo.completed">
+					<div class="view" flex>
+						<input class="toggle" type="checkbox"
+							(click)="solveTodo(todo)"
+							[readonly]="todo.completed"
+							[checked]="todo.completed">
+						<label>{{todo.title}}</label>
+						<ion-spinner class="todo-loading" color="light" *ngIf="todo.loading"></ion-spinner>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<footer class="footer" *ngIf="todos.length > 0">
+			<span class="todo-count"><strong>{{getRemaining().length}}</strong> {{getRemaining().length == 1 ? 'item' : 'items'}} left</span>
+		</footer>
+	</ng-container>
+</section>

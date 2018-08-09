@@ -1,0 +1,74 @@
+<!--
+  Copyright (c) 2018-present evan GmbH.
+ 
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+      http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<!--
+  Copyright (c) 2018-present evan GmbH.
+ 
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+      http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  
+-->
+
+<evan-loading *ngIf="loading" delayLoading="500"></evan-loading>
+<ng-container *ngIf="!loading" delayLoading="500"> 
+  <div text-left padding class="evan-content">
+    <h3 class="content-header">
+      {{ 'hello-world-1' | translate }}
+    </h3>
+    <table>
+      <thead>
+        <tr>
+          <th>{{ '_helloworld.field' | translate }}</th>
+          <th>{{ '_helloworld.value' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ '_helloworld.account-id' | translate }}</td>
+          <td>{{ myAccountId }}</td>
+        </tr>
+        <tr>
+          <td>{{ '_helloworld.balance' | translate }}</td>
+          <td>{{ balance }} EVE</td>
+        </tr>
+        <tr>
+          <td>{{ '_helloworld.mails' | translate }}</td>
+          <td>{{ mailService.receivedMails.length }}</td>
+        </tr>
+        <tr>
+          <td>{{ '_helloworld.contacts' | translate }}</td>
+          <td>{{ contactCount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div text-right margin>
+    <button ion-button outline round routerLink="../hello-world-2">
+      {{ '_helloworld.go-to-next-page' | translate }}
+    </button>
+  </div>
+</ng-container>
