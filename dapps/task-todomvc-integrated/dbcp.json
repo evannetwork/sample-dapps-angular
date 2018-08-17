@@ -1,6 +1,6 @@
 {
   "public": {
-    "author": "evan",
+    "author": "evan GmbH",
     "dapp": {
       "dependencies": {
         "angular-core": "^1.0.0",
@@ -15,7 +15,7 @@
       "secondaryColor": "#f9f9ff",
       "standalone": false,
       "type": "dapp",
-      "origin": "QmVUX5HB2Go7QeR1MwQ6gpMZ8ymgToq6QroDGbM1B5tqPo"
+      "origin": "QmXaufjm8KPeNaWR485Gk1w1uw2Pqyrdnif5TcTaXcaEic"
     },
     "description": "Task Tutorial.",
     "i18n": {
@@ -36,7 +36,7 @@
     ],
     "version": "0.1.0",
     "versions": {
-      "0.1.0": "QmbsPTRjDRVTqGKtxgbTAKnSa5EhGczAdsoEnNiL37NANE"
+      "0.1.0": "QmbW9jY29HtaSALZzWFUApgwviq6wmQcDHRYxcu9JjWj4Z"
     }
   }
 }

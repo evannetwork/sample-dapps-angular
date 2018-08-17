@@ -1,6 +1,6 @@
 {
   "public": {
-    "author": "evan",
+    "author": "evan GmbH",
     "dapp": {
       "dependencies": {
         "angular-core": "^1.0.0",
@@ -15,7 +15,7 @@
       "secondaryColor": "#f9f9ff",
       "standalone": false,
       "type": "dapp",
-      "origin": "QmcdxBfYRYcrupACJR1zKepJDtuYA4asihF5PPCsfy4zP6"
+      "origin": "QmfNfCAxeTS4w1MDH3xwSaHJwbCb3m6fPnbBPfFPVSvZEa"
     },
     "description": "Hello World.",
     "i18n": {
@@ -36,7 +36,7 @@
     ],
     "version": "0.1.0",
     "versions": {
-      "0.1.0": "Qmcc9svAzfHRVF6WoovS3VN822KSs2wEUSq13rydvX1hcQ"
+      "0.1.0": "QmciaBKWVwVEyBvFzgunmp8ZGaULigWMz7W7jxMo4Z4N8Y"
     }
   }
 }
