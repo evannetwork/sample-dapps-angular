@@ -8,15 +8,16 @@
       },
       "entrypoint": "tutorialtask.js",
       "files": [
-        "tutorialtask.js",
-        "tutorialtask.css"
+        "tutorialtask.css",
+        "tutorialtask.js"
       ],
+      "origin": "QmWszbvkhdVwkGUVXgRykR1pKAtMWWDdXYqpQ9XZJL3vNz",
       "primaryColor": "#004f7d",
       "secondaryColor": "#f9f9ff",
       "standalone": false,
-      "type": "dapp",
-      "origin": "QmWszbvkhdVwkGUVXgRykR1pKAtMWWDdXYqpQ9XZJL3vNz"
+      "type": "dapp"
     },
+    "dbcpVersion": 2,
     "description": "Task Tutorial.",
     "i18n": {
       "description": {
