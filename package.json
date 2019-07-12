@@ -5,8 +5,8 @@
   },
   "devDependencies": {
     "@evan.network/angular-gulp": "^2.0.0",
-    "@evan.network/api-blockchain-core": "^2.0.0",
-    "@evan.network/smart-contracts-core": "^2.0.0",
+    "@evan.network/api-blockchain-core": "^2.8.3",
+    "@evan.network/smart-contracts-core": "^2.4.2",
     "@evan.network/ui-angular-core": "^2.0.0",
     "@evan.network/ui-angular-libs": "^2.0.0",
     "@evan.network/ui-angular-sass": "^2.0.0",
@@ -35,5 +35,5 @@
     "deploy-to-contract": "node scripts/create-contract.js --dapp",
     "serve": "gulp --gulpfile node_modules/@evan.network/ui-dapp-browser/gulp/serve.js serve"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
